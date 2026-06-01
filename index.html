@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sultan Agung Ferdiansyah | Cloud Engineer</title>
+
+    <!-- =========================================================
+         External Libraries
+         - Google Fonts  : Syne (display) + DM Mono + DM Sans
+         - Bootstrap 5.3 : Grid & components
+         - Bootstrap Icons: Icon library
+         ========================================================= -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ==================================================================
+         NAVIGATION BAR
+         Internal links to sections: requirement (e)
+         ================================================================== -->
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">SA<span>.</span>Ferdiansyah</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Internal navigation links -->
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievement">Achievement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================================================================
+         HERO SECTION
+         H1 heading | Photo (a) | External links (e)
+         ================================================================== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left — Text -->
+                <div class="col-lg-7 hero-content">
+                    <div class="hero-badge">
+                        Open to new opportunities
+                    </div>
+
+                    <!-- H1: requirement (c) -->
+                    <h1 class="hero-name">
+                        Sultan Agung<br>
+                        <span style="color:var(--accent)">Ferdiansyah</span>
+                    </h1>
+
+                    <p class="hero-title">
+                        <i class="bi bi-cloud-fill me-1"></i>
+                        Engineer Delivery &nbsp;·&nbsp; Cloud Infrastructure &nbsp;·&nbsp; DevOps
+                    </p>
+                    <p class="hero-tagline">
+                        Building <strong>scalable, secure, and highly available</strong> cloud
+                        infrastructure across multi-cloud environments.
+                    </p>
+
+                    <!-- External links: requirement (e) -->
+                    <div class="hero-actions">
+                        <a href="https://linkedin.com/in/sltnferdiansyah" target="_blank" class="btn-accent">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://credly.com/users/sltnferdiansyah" target="_blank" class="btn-ghost">
+                            <i class="bi bi-patch-check"></i> Credly Badges
+                        </a>
+                    </div>
+
+                    <!-- Contact pills -->
+                    <div class="contact-pills">
+                        <a href="mailto:sultanferdiansyach@gmail.com" class="cpill">
+                            <i class="bi bi-envelope-fill"></i> sultanferdiansyach@gmail.com
+                        </a>
+                        <span class="cpill">
+                            <i class="bi bi-geo-alt-fill"></i> Jakarta, Indonesia
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right — Profile Photo (requirement a) -->
+                <div class="col-lg-5 hero-photo-wrap mt-5 mt-lg-0">
+                    <div class="photo-ring">
+                        <!--
+                            Foto diri — requirement (a)
+                            Ganti URL di bawah dengan foto asli Anda setelah upload ke hosting.
+                        -->
+                        <img
+                            src="https://ui-avatars.com/api/?name=Sultan+Agung+Ferdiansyah&background=0d1f38&color=00d4ff&size=420&bold=true&font-size=0.28"
+                            alt="Sultan Agung Ferdiansyah — Cloud Engineer"
+                            class="profile-photo"
+                        >
+                    </div>
+                    <!-- Decorative label -->
+                    <div class="photo-corner">
+                        <i class="bi bi-cloud-fill me-1"></i> Cloud Engineer
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================
+         ABOUT / PROFESSIONAL SUMMARY
+         H2 heading | 3 paragraphs (b) | Text formatting (d): strong, em, mark, code
+         ================================================================== -->
+    <section class="alt-bg" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Section header — H2: requirement (c) -->
+                    <p class="section-subtitle"><i class="bi bi-person-fill me-2"></i>About Me</p>
+                    <h2 class="section-title">Professional <span>Summary</span></h2>
+                    <div class="section-divider"></div>
+
+                    <!-- 3 paragraphs: requirement (b) -->
+                    <!-- Text formatting (strong, em, mark, code): requirement (d) -->
+                    <div class="about-text reveal">
+
+                        <!-- Paragraph 1 -->
+                        <p>
+                            I am a <strong>Cloud Engineer with 2+ years of experience</strong> in
+                            designing, deploying, and managing cloud and on-premises infrastructure
+                            across <em>multi-cloud environments</em> — including
+                            <em>GCP</em>, <em>AWS</em>, <em>Azure</em>, <em>Alibaba Cloud</em>,
+                            <em>Huawei Cloud</em>, and <em>Tencent Cloud</em>. I specialize in
+                            building scalable, secure, and highly available systems, with a strong
+                            background in <strong>network engineering</strong> and
+                            <strong>system administration</strong> using enterprise devices like
+                            <mark>Mikrotik, Cisco, Ruijie, Fortinet, and Unifi</mark>.
+                        </p>
+
+                        <!-- Paragraph 2 -->
+                        <p>
+                            Currently serving as <strong>Engineer Delivery</strong> at
+                            <em>PT. Awan Integrasi Sandidata (VibiCloud)</em>, I execute cloud
+                            implementation projects end-to-end — provisioning virtual machines,
+                            storage, networking, and security services, and deploying
+                            <strong>Microsoft Modern Workplace</strong> solutions for enterprise
+                            customers. I am experienced in <strong>DevOps</strong> practices using
+                            <em>Ansible</em>, <em>Docker</em>, and <em>Kubernetes</em>, with
+                            scripting proficiency in <code>Bash</code> and <code>Python</code> to
+                            improve operational efficiency and system reliability.
+                        </p>
+
+                        <!-- Paragraph 3 -->
+                        <p>
+                            Recognized for strong troubleshooting skills, I was awarded
+                            <strong>3rd place</strong> in the <em>IT Network System Administration</em>
+                            category at <strong>LKS SMK East Java 2023</strong> out of 62 participants.
+                            I continuously pursue professional growth through industry certifications,
+                            currently holding <mark>Google Associate Cloud Engineer</mark>,
+                            <mark>AWS Certified Cloud Practitioner</mark>, and
+                            <mark>Microsoft Azure Fundamentals</mark>, among many others.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech banner image: requirement (f) image 2 -->
+            <div class="row mt-3">
+                <div class="col-12 reveal">
+                    <!--
+                        Gambar 2 — Tech banner
+                        requirement (f): minimal 3 gambar
+                    -->
+                    <img
+                        src="https://placehold.co/1200x180/0a1628/00d4ff?text=Cloud+%7C+Network+%7C+DevOps+%7C+Infrastructure+Engineering"
+                        alt="Cloud, Network, DevOps and Infrastructure Engineering"
+                        class="tech-banner-img"
+                    >
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================================================================
+         WORK EXPERIENCE
+         H3 headings | Unordered lists (requirement h – list 1 & 2)
+         ================================================================== -->
+    <section id="experience">
+        <div class="container">
+            <p class="section-subtitle"><i class="bi bi-briefcase-fill me-2"></i>Career</p>
+            <!-- H2: requirement (c) -->
+            <h2 class="section-title">Work <span>Experience</span></h2>
+            <div class="section-divider"></div>
+
+            <div class="timeline">
+
+                <!-- ---- VibiCloud ---- -->
+                <div class="timeline-item reveal">
+                    <div class="company-card">
+                        <!-- H3: requirement (c) -->
+                        <h3 class="company-name">
+                            PT. Awan Integrasi Sandidata
+                            <span style="color:var(--accent)">(VibiCloud)</span>
+                        </h3>
+                        <div class="date-tag">
+                            <i class="bi bi-calendar3"></i> May 2025 – Present &nbsp;·&nbsp; Jakarta &nbsp;·&nbsp; Full Time
+                        </div>
+
+                        <!-- Sub-role: Engineer Delivery -->
+                        <div class="sub-role primary-border">
+                            <div class="sub-role-label">Engineer Delivery · Jan 2026 – Present</div>
+                            <!-- Unordered list 1: requirement (h) -->
+                            <ul class="exp-list">
+                                <li>Execute cloud implementation projects per approved scope and architecture.</li>
+                                <li>Provision and configure cloud resources: <strong>VMs, storage, networking, security</strong>.</li>
+                                <li>Deploy and configure <strong>Microsoft Modern Workplace</strong> (M365, Exchange, Teams).</li>
+                                <li>Manage M365 licenses, tenant setup, domain configuration, email deployment.</li>
+                                <li>Implement <em>VPN setup</em>, routing, and firewall policy adjustments.</li>
+                                <li>Prepare as-built documentation and implementation reports for project closure.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Sub-role: Cloud Engineer -->
+                        <div class="sub-role mt-2">
+                            <div class="sub-role-label">Cloud Engineer · May 2025 – Jan 2026</div>
+                            <!-- Unordered list 2: requirement (h) -->
+                            <ul class="exp-list">
+                                <li>Managed infrastructure across <strong>AWS, Azure, GCP, Alibaba, Huawei & Tencent Cloud</strong>.</li>
+                                <li>Managed domain records and WAF using <em>Cloudflare</em>, GoDaddy, and Sucuri.</li>
+                                <li>Delivered on-premises DR with <em>VMware ESXi</em> and Fortinet FortiGate gateway.</li>
+                                <li>Prepared and delivered SLA performance reports with improvement recommendations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ---- Desnet ---- -->
+                <div class="timeline-item reveal">
+                    <div class="company-card">
+                        <h3 class="company-name">PT. DES Teknologi Informasi <span style="color:var(--accent)">(Desnet)</span></h3>
+                        <div class="role-tag alt">Technical Support</div>
+                        <div class="date-tag"><i class="bi bi-calendar3"></i> July 2023 – April 2025 · Surabaya · Full Time</div>
+                        <ul class="exp-list">
+                            <li>Provided technical support and managed tickets within established <em>SLAs</em>.</li>
+                            <li>Monitored network devices in real-time; detected and resolved service-affecting issues.</li>
+                            <li>Optimized client network infrastructure for high performance and availability.</li>
+                            <li>Implemented <strong>automated drop services rules</strong> for clients as a new company feature.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ---- Gayatri ---- -->
+                <div class="timeline-item reveal">
+                    <div class="company-card">
+                        <h3 class="company-name">PT. Gayatri Lintas Nusantara</h3>
+                        <div class="role-tag dim">Freelance Onsite Engineer</div>
+                        <div class="date-tag"><i class="bi bi-calendar3"></i> December 2023 – July 2024 · Surabaya · Freelance</div>
+                        <ul class="exp-list">
+                            <li>Troubleshot network issues and assisted management with customer complaints.</li>
+                            <li>Optimized client network infrastructure for high performance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ---- Telkom ---- -->
+                <div class="timeline-item reveal">
+                    <div class="company-card">
+                        <h3 class="company-name">PT. Telkom Witel Pasuruan <span style="color:var(--accent)">(Telkom Indonesia)</span></h3>
+                        <div class="role-tag dim">Intern — JOAN &amp; Maintenance Technician</div>
+                        <div class="date-tag"><i class="bi bi-calendar3"></i> January 2022 – June 2022 · Kota Pasuruan · Internship</div>
+                        <ul class="exp-list">
+                            <li>Managed and maintained <em>fiber optic</em> network connections for customers.</li>
+                            <li>Performed maintenance on <code>OLT</code>, <code>ODC</code>, <code>ODP</code>, and <code>ONT</code> devices.</li>
+                            <li>Repaired damaged fiber optic cables and verified service issues for troubleshooting.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================
+         EDUCATION — TABLE 1: requirement (g)
+         ================================================================== -->
+    <section class="alt-bg" id="education">
+        <div class="container">
+            <p class="section-subtitle"><i class="bi bi-mortarboard-fill me-2"></i>Education</p>
+            <!-- H2 heading: requirement (c) -->
+            <h2 class="section-title">Academic <span>Background</span></h2>
+            <div class="section-divider"></div>
+
+            <!--
+                TABEL 1 — Education
+                requirement (g): minimal 2 tabel
+            -->
+            <div class="table-wrap reveal">
+                <table class="cv-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Institution</th>
+                            <th>Program / Major</th>
+                            <th>Level</th>
+                            <th>Period</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="mono">01</span></td>
+                            <td><strong>Universitas Siber Asia</strong></td>
+                            <td>Informatics</td>
+                            <td><span class="issuer-tag tag-ms">S1 / Bachelor</span></td>
+                            <td>2024 – 2026</td>
+                            <td>–</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">02</span></td>
+                            <td><strong>SMK Negeri 2 Kota Probolinggo</strong></td>
+                            <td>Computer Network Engineering (TKJ)</td>
+                            <td><span class="issuer-tag tag-other">Vocational HS</span></td>
+                            <td>July 2020 – May 2023</td>
+                            <td><span class="gpa-tag">87.86 / 100</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================
+         SKILLS — Lists: requirement (h)
+         H4 headings: requirement (c)
+         ================================================================== -->
+    <section id="skills">
+        <div class="container">
+            <p class="section-subtitle"><i class="bi bi-cpu-fill me-2"></i>Expertise</p>
+            <!-- H2: requirement (c) -->
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <div class="section-divider"></div>
+
+            <div class="row g-4">
+
+                <!-- Skill Card 1: IT Network -->
+                <div class="col-sm-6 col-xl-3 reveal">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-router-fill"></i></div>
+                        <!-- H4: requirement (c) -->
+                        <h4 class="skill-card-title">IT Network</h4>
+                        <!-- Unordered list: requirement (h) -->
+                        <ul class="skill-ul">
+                            <li><i class="bi bi-chevron-right"></i>Mikrotik, Cisco, Ruijie, Fortinet, Unifi</li>
+                            <li><i class="bi bi-chevron-right"></i>Routing, Switching, VLAN, WLAN</li>
+                            <li><i class="bi bi-chevron-right"></i>Firewall, NAT, VPN Setup</li>
+                            <li><i class="bi bi-chevron-right"></i>Bandwidth Optimization</li>
+                            <li><i class="bi bi-chevron-right"></i>Network Cabling &amp; Troubleshooting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2: System Admin -->
+                <div class="col-sm-6 col-xl-3 reveal">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-server"></i></div>
+                        <h4 class="skill-card-title">System Administration</h4>
+                        <!-- Unordered list: requirement (h) -->
+                        <ul class="skill-ul">
+                            <li><i class="bi bi-chevron-right"></i>Apache2, Nginx, HAProxy (LB &amp; Failover)</li>
+                            <li><i class="bi bi-chevron-right"></i>DNS (Master-Slave), DHCP, Mail Server</li>
+                            <li><i class="bi bi-chevron-right"></i>SSH, Database Services, PC Router</li>
+                            <li><i class="bi bi-chevron-right"></i>Linux: Debian, Ubuntu</li>
+                            <li><i class="bi bi-chevron-right"></i>Windows Server Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3: Cloud & Virtualization -->
+                <div class="col-sm-6 col-xl-3 reveal">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-cloud-fill"></i></div>
+                        <h4 class="skill-card-title">Cloud &amp; Virtualization</h4>
+                        <ul class="skill-ul">
+                            <li><i class="bi bi-chevron-right"></i>GCP, AWS, Azure, Alibaba Cloud</li>
+                            <li><i class="bi bi-chevron-right"></i>Huawei Cloud, Tencent Cloud</li>
+                            <li><i class="bi bi-chevron-right"></i>Proxmox, VMware ESXi (Type-1 HV)</li>
+                            <li><i class="bi bi-chevron-right"></i>Docker &amp; Docker Swarm</li>
+                            <li><i class="bi bi-chevron-right"></i>Kubernetes (K8s)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4: DevOps / Automation -->
+                <div class="col-sm-6 col-xl-3 reveal">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+                        <h4 class="skill-card-title">DevOps &amp; Automation</h4>
+                        <ul class="skill-ul">
+                            <li><i class="bi bi-chevron-right"></i>Bash Scripting &amp; Cronjob</li>
+                            <li><i class="bi bi-chevron-right"></i>Terraform (Infrastructure as Code)</li>
+                            <li><i class="bi bi-chevron-right"></i>Ansible (Configuration Mgmt.)</li>
+                            <li><i class="bi bi-chevron-right"></i>Python Scripting &amp; Network Tools</li>
+                            <li><i class="bi bi-chevron-right"></i>Microsoft 365 Modern Workplace</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================
+         CERTIFICATIONS — TABLE 2: requirement (g)
+         ================================================================== -->
+    <section class="alt-bg" id="certifications">
+        <div class="container">
+            <p class="section-subtitle"><i class="bi bi-patch-check-fill me-2"></i>Credentials</p>
+            <!-- H2 heading: requirement (c) -->
+            <h2 class="section-title">Certifications &amp; <span>Training</span></h2>
+            <div class="section-divider"></div>
+
+            <!--
+                TABEL 2 — Certifications
+                requirement (g): minimal 2 tabel
+            -->
+            <div class="table-wrap reveal">
+                <table class="cv-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Certification</th>
+                            <th>Issuer</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="mono">01</span></td>
+                            <td><strong>Google Associate Cloud Engineer</strong></td>
+                            <td><span class="issuer-tag tag-google"><i class="bi bi-google"></i> Google</span></td>
+                            <td>2026</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">02</span></td>
+                            <td><strong>AWS Certified Cloud Practitioner</strong></td>
+                            <td><span class="issuer-tag tag-aws">☁ Amazon Web Services</span></td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">03</span></td>
+                            <td><strong>Microsoft Certified: Azure Fundamentals</strong></td>
+                            <td><span class="issuer-tag tag-ms">⊞ Microsoft</span></td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">04</span></td>
+                            <td>Google Cloud Fundamental</td>
+                            <td><span class="issuer-tag tag-google"><i class="bi bi-google"></i> Google Cloud</span></td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">05</span></td>
+                            <td>Google Cloud Essentials</td>
+                            <td><span class="issuer-tag tag-google"><i class="bi bi-google"></i> Google Cloud Skill Boost</span></td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">06</span></td>
+                            <td>Kubernetes in Google Cloud</td>
+                            <td><span class="issuer-tag tag-google"><i class="bi bi-google"></i> Google Cloud</span></td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">07</span></td>
+                            <td>Cloud Quest: Cloud Practitioner</td>
+                            <td><span class="issuer-tag tag-aws">☁ Amazon Web Services</span></td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">08</span></td>
+                            <td>AWS Knowledge: Cloud Essentials</td>
+                            <td><span class="issuer-tag tag-aws">☁ Amazon Web Services</span></td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">09</span></td>
+                            <td>CCNA: Introduction to Networks</td>
+                            <td><span class="issuer-tag tag-cisco">⊙ Cisco</span></td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">10</span></td>
+                            <td>CCNA: Routing, Switching &amp; Wireless Essentials</td>
+                            <td><span class="issuer-tag tag-cisco">⊙ Cisco</span></td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">11</span></td>
+                            <td>Ruijie Specialist Engineer (RSE) for Reyee</td>
+                            <td><span class="issuer-tag tag-ruijie">◈ Ruijie</span></td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">12</span></td>
+                            <td>Ruijie Certified Network Associate (RCNA)</td>
+                            <td><span class="issuer-tag tag-ruijie">◈ Ruijie</span></td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">13</span></td>
+                            <td>Junior Network Administrator</td>
+                            <td><span class="issuer-tag tag-bnsp">✦ BNSP</span></td>
+                            <td>2023</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">14</span></td>
+                            <td>Teknisi Instalasi dan Aktivasi</td>
+                            <td><span class="issuer-tag tag-bnsp">✦ BNSP</span></td>
+                            <td>2023</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">15</span></td>
+                            <td>IT Support Google</td>
+                            <td><span class="issuer-tag tag-google"><i class="bi bi-google"></i> Google</span></td>
+                            <td>2023</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">16</span></td>
+                            <td>Linux System Administration</td>
+                            <td><span class="issuer-tag tag-other">Adinusa</span></td>
+                            <td>2023</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mono">17</span></td>
+                            <td>Docker Fundamentals</td>
+                            <td><span class="issuer-tag tag-other">Adinusa</span></td>
+                            <td>2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================
+         ACHIEVEMENT
+         H3 heading | Ordered list (requirement h – list 3) | Image (f – image 3)
+         ================================================================== -->
+    <section id="achievement">
+        <div class="container">
+            <p class="section-subtitle"><i class="bi bi-trophy-fill me-2"></i>Recognition</p>
+            <!-- H2 heading: requirement (c) -->
+            <h2 class="section-title">Key <span>Achievement</span></h2>
+            <div class="section-divider"></div>
+
+            <div class="row g-4 align-items-center">
+
+                <!-- Achievement card -->
+                <div class="col-lg-7 reveal">
+                    <div class="achievement-card">
+                        <span class="trophy">🏆</span>
+                        <!-- H3: requirement (c) -->
+                        <h3 class="ach-title">3rd Place — LKS SMK JATIM 2023</h3>
+                        <p class="ach-sub">IT Network System Administration · 31st LKS SMK East Java · Jember, May 2023</p>
+                        <p class="ach-body">
+                            Achieved <strong style="color:var(--gold)">3rd place out of 62 participants</strong>
+                            representing <em>SMK Negeri 2 Kota Probolinggo</em> at the 31st Lomba Kompetensi
+                            Siswa (LKS SMK) East Java Provincial Level. Demonstrated expertise across four modules:
+                        </p>
+
+                        <!--
+                            Ordered list (numbered modules): requirement (h)
+                        -->
+                        <ol class="module-ol">
+                            <li>
+                                <strong style="color:var(--text-primary)">Network System</strong>
+                                — Advanced network device configuration
+                            </li>
+                            <li>
+                                <strong style="color:var(--text-primary)">Client Server Environment</strong>
+                                — VMware ESXi &amp; Windows / Linux Server
+                            </li>
+                            <li>
+                                <strong style="color:var(--text-primary)">Automation &amp; Programmability</strong>
+                                — Ansible, containerization with Docker
+                            </li>
+                            <li>
+                                <strong style="color:var(--text-primary)">Network Troubleshooting</strong>
+                                — Cisco Modeling Labs (CML)
+                            </li>
+                        </ol>
+
+                        <span class="issuer-tag tag-bnsp">
+                            Issued by Dinas Pendidikan Prov. Jawa Timur
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Achievement image (requirement f – image 3) -->
+                <div class="col-lg-5 reveal">
+                    <!--
+                        Gambar 3 — Achievement badge
+                        requirement (f): minimal 3 gambar
+                        Ganti dengan foto sertifikat/piala asli Anda.
+                    -->
+                    <img
+                        src="https://placehold.co/600x420/0d1f38/f59e0b?text=LKS+SMK+JATIM+2023%0A3rd+Place+%F0%9F%8F%86%0AIT+Network+System+Admin"
+                        alt="LKS SMK JATIM 2023 — 3rd Place Achievement, IT Network System Administration"
+                        class="ach-img"
+                    >
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================
+         CONTACT
+         External links: requirement (e)
+         ================================================================== -->
+    <section class="alt-bg" id="contact">
+        <div class="container">
+            <p class="section-subtitle"><i class="bi bi-send-fill me-2"></i>Contact</p>
+            <!-- H2 heading: requirement (c) -->
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="section-divider"></div>
+
+            <!-- Contact cards — all are links: requirement (e) -->
+            <div class="contact-grid reveal">
+
+                <!-- Email: external link -->
+                <a href="mailto:sultanferdiansyach@gmail.com" class="contact-card">
+                    <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                    <div>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">sultanferdiansyach@gmail.com</div>
+                    </div>
+                </a>
+
+                <!-- Phone: external link -->
+                <a href="tel:+6288989798161" class="contact-card">
+                    <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                    <div>
+                        <div class="contact-label">Phone</div>
+                        <div class="contact-value">+62 889-8979-8161</div>
+                    </div>
+                </a>
+
+                <!-- LinkedIn: external link -->
+                <a href="https://linkedin.com/in/sltnferdiansyah" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon"><i class="bi bi-linkedin"></i></div>
+                    <div>
+                        <div class="contact-label">LinkedIn</div>
+                        <div class="contact-value">linkedin.com/in/sltnferdiansyah</div>
+                    </div>
+                </a>
+
+                <!-- Credly: external link -->
+                <a href="https://credly.com/users/sltnferdiansyah" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon"><i class="bi bi-patch-check-fill"></i></div>
+                    <div>
+                        <div class="contact-label">Credly</div>
+                        <div class="contact-value">credly.com/users/sltnferdiansyah</div>
+                    </div>
+                </a>
+
+                <!-- Location: Google Maps link -->
+                <a href="https://maps.google.com/?q=Jakarta+Indonesia" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div>
+                        <div class="contact-label">Location</div>
+                        <div class="contact-value">Jakarta, Indonesia</div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================================================================
+         FOOTER
+         ================================================================== -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2025 <span>Sultan Agung Ferdiansyah</span> &nbsp;·&nbsp;
+                Built with <span>HTML</span>, <span>CSS</span> &amp; <span>Bootstrap 5</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- ==================================================================
+         SCRIPTS
+         Bootstrap 5 Bundle (includes Popper)
+         ================================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // =============================================
+        // Intersection Observer — Scroll Reveal
+        // =============================================
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.transitionDelay = `${(i % 4) * 80}ms`;
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // =============================================
+        // Navbar — Scroll shadow effect
+        // =============================================
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                nav.style.background  = 'rgba(6, 12, 26, 0.98)';
+                nav.style.boxShadow   = '0 4px 24px rgba(0,0,0,0.5)';
+            } else {
+                nav.style.background  = 'rgba(6, 12, 26, 0.92)';
+                nav.style.boxShadow   = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
