@@ -1,0 +1,77 @@
+body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+#container {
+    width: 800px;
+    margin: auto;
+    background-color: beige;
+    border: 2px solid black;
+}
+
+#header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#menu {
+    background-color: yellow;
+    text-align: center;
+    padding: 10px;
+}
+
+#menu a {
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#content {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.section h2 {
+    color: darkblue;
+}
+
+img {
+    border: 3px solid black;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+#experience ul {
+    list-style-type: square;
+}
+
+#contact a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
