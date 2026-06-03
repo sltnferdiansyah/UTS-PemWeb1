@@ -49,16 +49,26 @@ body {
     border: 3px solid black;
 }
 
-button {
-    background-color: green;
-    color: white;
-    padding: 10px;
-    border: none;
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
-button:hover {
-    background-color: darkgreen;
+th {
+    background-color: navy;
+    color: white;
+    padding: 8px;
 }
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
 
 #experience ul {
     list-style-type: square;
